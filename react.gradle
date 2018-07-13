@@ -30,7 +30,8 @@ afterEvaluate {
     def productFlavors = android.applicationVariants.collect { flavor -> flavor }
 
     // When no product flavors defined, use empty
-    if (!productFlavors) productFlavors.add('')
+//    todo: check side effects
+//    if (!productFlavors) productFlavors.add('')
 
     productFlavors.each { productFlavor ->
         def productFlavorName = productFlavor.flavorName
